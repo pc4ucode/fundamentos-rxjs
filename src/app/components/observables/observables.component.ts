@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { interval, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-observables',
@@ -12,6 +12,7 @@ export class ObservablesComponent implements OnInit {
   }
 
   initObservable() {
+    // Observable
     const observable = new Observable((subscriber) => {
       subscriber.next(10);
       subscriber.next('Danilo');
@@ -22,12 +23,22 @@ export class ObservablesComponent implements OnInit {
 
     observable.subscribe();
 
+    // Observer
+    const it = interval(1000);
     const observer = {
       next: (x: any) => console.log('Observer next value ' + x),
       error: (err: any) => console.error('Observer error ' + err),
       complete: () => console.log('Observer complete'),
     };
 
-    observable.subscribe(observer);
+    // Subscription
+    const subscription = observable.subscribe(observer);
+    const subscription2 = it.subscribe(console.log);
+
+    setTimeout(() => {
+      subscription2.unsubscribe();
+    }, 3000);
+
+    subscription.unsubscribe();
   }
 }
