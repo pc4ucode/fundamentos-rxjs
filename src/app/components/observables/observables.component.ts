@@ -20,16 +20,14 @@ export class ObservablesComponent implements OnInit {
       subscriber.complete();
     });
 
-    observable.subscribe(
-      (res) => {
-        console.log(res);
-      },
-      (error) => {
-        console.log(error);
-      },
-      () => {
-        console.log('Completou o observable!');
-      }
-    );
+    observable.subscribe();
+
+    const observer = {
+      next: (x: any) => console.log('Observer next value ' + x),
+      error: (err: any) => console.error('Observer error ' + err),
+      complete: () => console.log('Observer complete'),
+    };
+
+    observable.subscribe(observer);
   }
 }
