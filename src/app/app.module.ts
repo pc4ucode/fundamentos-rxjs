@@ -8,6 +8,7 @@ import { SubjectComponent } from './components/subject/subject.component';
 import { FromComponent } from './components/creation-operators/from/from.component';
 import { OfComponent } from './components/creation-operators/of/of.component';
 import { FromEventComponent } from './components/creation-operators/from-event/from-event.component';
+import { IntervalComponent } from './components/creation-operators/interval/interval.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FromEventComponent } from './components/creation-operators/from-event/f
     SubjectComponent,
     FromComponent,
     OfComponent,
-    FromEventComponent
+    FromEventComponent,
+    IntervalComponent
   ],
   imports: [
     BrowserModule,
