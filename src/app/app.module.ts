@@ -10,6 +10,7 @@ import { OfComponent } from './components/creation-operators/of/of.component';
 import { FromEventComponent } from './components/creation-operators/from-event/from-event.component';
 import { IntervalComponent } from './components/creation-operators/interval/interval.component';
 import { TimerComponent } from './components/creation-operators/timer/timer.component';
+import { ThrowErrorComponent } from './components/creation-operators/throw-error/throw-error.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TimerComponent } from './components/creation-operators/timer/timer.comp
     OfComponent,
     FromEventComponent,
     IntervalComponent,
-    TimerComponent
+    TimerComponent,
+    ThrowErrorComponent
   ],
   imports: [
     BrowserModule,
