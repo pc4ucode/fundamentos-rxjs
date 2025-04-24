@@ -12,6 +12,7 @@ import { IntervalComponent } from './components/creation-operators/interval/inte
 import { TimerComponent } from './components/creation-operators/timer/timer.component';
 import { ThrowErrorComponent } from './components/creation-operators/throw-error/throw-error.component';
 import { AjaxComponent } from './components/creation-operators/ajax/ajax.component';
+import { ForkjoinComponent } from './components/creation-operators-junction/forkjoin/forkjoin.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AjaxComponent } from './components/creation-operators/ajax/ajax.compone
     IntervalComponent,
     TimerComponent,
     ThrowErrorComponent,
-    AjaxComponent
+    AjaxComponent,
+    ForkjoinComponent
   ],
   imports: [
     BrowserModule,
