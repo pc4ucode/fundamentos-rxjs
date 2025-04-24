@@ -11,6 +11,7 @@ import { FromEventComponent } from './components/creation-operators/from-event/f
 import { IntervalComponent } from './components/creation-operators/interval/interval.component';
 import { TimerComponent } from './components/creation-operators/timer/timer.component';
 import { ThrowErrorComponent } from './components/creation-operators/throw-error/throw-error.component';
+import { AjaxComponent } from './components/creation-operators/ajax/ajax.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ThrowErrorComponent } from './components/creation-operators/throw-error
     FromEventComponent,
     IntervalComponent,
     TimerComponent,
-    ThrowErrorComponent
+    ThrowErrorComponent,
+    AjaxComponent
   ],
   imports: [
     BrowserModule,
