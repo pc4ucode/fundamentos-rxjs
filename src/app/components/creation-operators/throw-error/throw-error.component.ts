@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { throwError } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { throwError } from 'rxjs';
   templateUrl: './throw-error.component.html',
   styleUrl: './throw-error.component.scss',
 })
-export class ThrowErrorComponent implements OnInit {
+export class ThrowErrorComponent {
   ngOnInit() {
     this.operatorTimerThrowError();
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { of } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { of } from 'rxjs';
   templateUrl: './of.component.html',
   styleUrl: './of.component.scss',
 })
-export class OfComponent implements OnInit {
+export class OfComponent {
   ngOnInit() {
     this.operatorof();
   }

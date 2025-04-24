@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { fromEvent } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { fromEvent } from 'rxjs';
   templateUrl: './from-event.component.html',
   styleUrl: './from-event.component.scss',
 })
-export class FromEventComponent implements AfterViewInit {
+export class FromEventComponent {
   @ViewChild('myButton') myButton!: ElementRef;
 
   ngAfterViewInit() {

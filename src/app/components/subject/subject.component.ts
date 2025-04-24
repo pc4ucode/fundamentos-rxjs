@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { BehaviorSubject, Subject } from 'rxjs';
   templateUrl: './subject.component.html',
   styleUrl: './subject.component.scss',
 })
-export class SubjectComponent implements OnInit {
+export class SubjectComponent {
   ngOnInit() {
     this.initSubject();
   }

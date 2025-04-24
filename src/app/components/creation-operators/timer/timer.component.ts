@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { concatMap, of, timer } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { concatMap, of, timer } from 'rxjs';
   templateUrl: './timer.component.html',
   styleUrl: './timer.component.scss',
 })
-export class TimerComponent implements OnInit {
+export class TimerComponent {
   ngOnInit() {
     this.operatorTimer();
   }

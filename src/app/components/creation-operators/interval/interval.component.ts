@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { interval } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { interval } from 'rxjs';
   templateUrl: './interval.component.html',
   styleUrl: './interval.component.scss',
 })
-export class IntervalComponent implements OnInit {
+export class IntervalComponent {
   ngOnInit() {
     this.operatorInterval();
   }

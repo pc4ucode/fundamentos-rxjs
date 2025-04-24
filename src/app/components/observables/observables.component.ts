@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { interval, Observable } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { interval, Observable } from 'rxjs';
   templateUrl: './observables.component.html',
   styleUrl: './observables.component.scss',
 })
-export class ObservablesComponent implements OnInit {
+export class ObservablesComponent {
   ngOnInit() {
     this.initObservable();
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { from } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { from } from 'rxjs';
   templateUrl: './from.component.html',
   styleUrl: './from.component.scss',
 })
-export class FromComponent implements OnInit {
+export class FromComponent {
   ngOnInit() {
     this.operatorFrom();
   }
