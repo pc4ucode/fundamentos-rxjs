@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { forkJoin, of, timer } from 'rxjs';
 import { ajax } from 'rxjs/ajax';
+import { ApiService } from '../../../services/api.service';
 
 @Component({
   selector: 'app-forkjoin',
@@ -8,8 +9,11 @@ import { ajax } from 'rxjs/ajax';
   styleUrl: './forkjoin.component.scss',
 })
 export class ForkjoinComponent {
+  constructor(private apiService: ApiService) {}
+
   ngOnInit() {
     this.operatorForkJoin();
+    this.getUsers();
   }
 
   operatorForkJoin() {
@@ -27,5 +31,9 @@ export class ForkjoinComponent {
     http$.subscribe((res) => console.log('res forkJoin: ', res));
 
     httpMult$.subscribe((res) => console.log('res forkJoin multi: ', res));
+  }
+
+  getUsers() {
+    this.apiService.getUsers().subscribe((res) => console.log(res));
   }
 }
