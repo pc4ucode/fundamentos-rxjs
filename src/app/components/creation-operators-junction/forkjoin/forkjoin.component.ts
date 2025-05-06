@@ -34,6 +34,6 @@ export class ForkjoinComponent {
   }
 
   getUsers() {
-    this.apiService.getUsers().subscribe((res) => console.log(res));
+    this.apiService.getUsersForkJoin().subscribe((res) => console.log(res));
   }
 }

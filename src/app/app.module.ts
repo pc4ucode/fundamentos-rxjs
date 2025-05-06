@@ -14,6 +14,7 @@ import { ThrowErrorComponent } from './components/creation-operators/throw-error
 import { AjaxComponent } from './components/creation-operators/ajax/ajax.component';
 import { ForkjoinComponent } from './components/creation-operators-junction/forkjoin/forkjoin.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ZipComponent } from './components/creation-operators-junction/zip/zip.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     ThrowErrorComponent,
     AjaxComponent,
     ForkjoinComponent,
+    ZipComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
