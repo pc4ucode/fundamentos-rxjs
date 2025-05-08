@@ -15,6 +15,7 @@ import { AjaxComponent } from './components/creation-operators/ajax/ajax.compone
 import { ForkjoinComponent } from './components/creation-operators-junction/forkjoin/forkjoin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ZipComponent } from './components/creation-operators-junction/zip/zip.component';
+import { MergeConcatComponent } from './components/creation-operators-junction/merge-concat/merge-concat.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ZipComponent } from './components/creation-operators-junction/zip/zip.c
     AjaxComponent,
     ForkjoinComponent,
     ZipComponent,
+    MergeConcatComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
