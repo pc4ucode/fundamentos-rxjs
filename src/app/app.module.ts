@@ -16,6 +16,7 @@ import { ForkjoinComponent } from './components/creation-operators-junction/fork
 import { HttpClientModule } from '@angular/common/http';
 import { ZipComponent } from './components/creation-operators-junction/zip/zip.component';
 import { MergeConcatComponent } from './components/creation-operators-junction/merge-concat/merge-concat.component';
+import { MapComponent } from './components/transformation-operators/map/map.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MergeConcatComponent } from './components/creation-operators-junction/m
     ForkjoinComponent,
     ZipComponent,
     MergeConcatComponent,
+    MapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
