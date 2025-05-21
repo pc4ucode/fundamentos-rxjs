@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ZipComponent } from './components/creation-operators-junction/zip/zip.component';
 import { MergeConcatComponent } from './components/creation-operators-junction/merge-concat/merge-concat.component';
 import { MapComponent } from './components/transformation-operators/map/map.component';
+import { MapToComponent } from './components/transformation-operators/map-to/map-to.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MapComponent } from './components/transformation-operators/map/map.comp
     ZipComponent,
     MergeConcatComponent,
     MapComponent,
+    MapToComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
