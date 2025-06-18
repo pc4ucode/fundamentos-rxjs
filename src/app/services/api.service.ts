@@ -59,4 +59,12 @@ export class ApiService {
 
     return http$;
   }
+
+  getUserSwitchMap() {
+    return this.http.get('http://localhost:3000/user');
+  }
+
+  getUserSwitchMapSearch(cpf: string) {
+    return this.http.get(`http://localhost:3000/users?cpf=${cpf}`);
+  }
 }

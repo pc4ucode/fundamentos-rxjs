@@ -18,6 +18,7 @@ import { ZipComponent } from './components/creation-operators-junction/zip/zip.c
 import { MergeConcatComponent } from './components/creation-operators-junction/merge-concat/merge-concat.component';
 import { MapComponent } from './components/transformation-operators/map/map.component';
 import { MapToComponent } from './components/transformation-operators/map-to/map-to.component';
+import { SwitchMapComponent } from './components/transformation-operators/switch-map/switch-map.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MapToComponent } from './components/transformation-operators/map-to/map
     MergeConcatComponent,
     MapComponent,
     MapToComponent,
+    SwitchMapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
