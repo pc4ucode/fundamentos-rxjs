@@ -19,6 +19,7 @@ import { MergeConcatComponent } from './components/creation-operators-junction/m
 import { MapComponent } from './components/transformation-operators/map/map.component';
 import { MapToComponent } from './components/transformation-operators/map-to/map-to.component';
 import { SwitchMapComponent } from './components/transformation-operators/switch-map/switch-map.component';
+import { PluckComponent } from './components/transformation-operators/pluck/pluck.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SwitchMapComponent } from './components/transformation-operators/switch
     MapComponent,
     MapToComponent,
     SwitchMapComponent,
+    PluckComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
