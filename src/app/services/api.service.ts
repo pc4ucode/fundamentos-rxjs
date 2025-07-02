@@ -1,6 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { concat, forkJoin, interval, map, merge, Observable, zip } from 'rxjs';
+import {
+  concat,
+  forkJoin,
+  interval,
+  map,
+  merge,
+  Observable,
+  toArray,
+  zip,
+} from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -66,5 +75,9 @@ export class ApiService {
 
   getUserSwitchMapSearch(cpf: string) {
     return this.http.get(`http://localhost:3000/users?cpf=${cpf}`);
+  }
+
+  getUserToArray() {
+    return this.http.get(`http://localhost:3000/user`).pipe(toArray());
   }
 }
