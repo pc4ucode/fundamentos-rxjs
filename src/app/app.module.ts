@@ -25,6 +25,7 @@ import { FilterComponent } from './components/transformation-filtering/filter/fi
 import { TakeComponent } from './components/transformation-filtering/take/take.component';
 import { TakeUntilComponent } from './components/transformation-filtering/take-until/take-until.component';
 import { TakeWhileComponent } from './components/transformation-filtering/take-while/take-while.component';
+import { SkipComponent } from './components/transformation-filtering/skip/skip.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { TakeWhileComponent } from './components/transformation-filtering/take-w
     TakeComponent,
     TakeUntilComponent,
     TakeWhileComponent,
+    SkipComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
