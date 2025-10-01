@@ -80,4 +80,8 @@ export class ApiService {
   getUserToArray() {
     return this.http.get(`http://localhost:3000/user`).pipe(toArray());
   }
+
+  getUsersDebounceTime(name: string) {
+    return this.http.get(`http://localhost:3000/users?name=${name}`);
+  }
 }

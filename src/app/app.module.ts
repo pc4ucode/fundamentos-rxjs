@@ -26,6 +26,7 @@ import { TakeComponent } from './components/transformation-filtering/take/take.c
 import { TakeUntilComponent } from './components/transformation-filtering/take-until/take-until.component';
 import { TakeWhileComponent } from './components/transformation-filtering/take-while/take-while.component';
 import { SkipComponent } from './components/transformation-filtering/skip/skip.component';
+import { DebounceTimeComponent } from './components/transformation-filtering/debounce-time/debounce-time.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { SkipComponent } from './components/transformation-filtering/skip/skip.c
     TakeUntilComponent,
     TakeWhileComponent,
     SkipComponent,
+    DebounceTimeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
