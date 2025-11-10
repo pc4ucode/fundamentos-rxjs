@@ -30,6 +30,7 @@ import { DebounceTimeComponent } from './components/transformation-filtering/deb
 import { SwitchAllComponent } from './components/operators-join/switch-all/switch-all.component';
 import { StartWithComponent } from './components/operators-join/start-with/start-with.component';
 import { CombineLatestComponent } from './components/operators-join/combine-latest/combine-latest.component';
+import { WithLatestFromComponent } from './components/operators-join/with-latest-from/with-latest-from.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { CombineLatestComponent } from './components/operators-join/combine-late
     SwitchAllComponent,
     StartWithComponent,
     CombineLatestComponent,
+    WithLatestFromComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
