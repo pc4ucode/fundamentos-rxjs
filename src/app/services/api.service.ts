@@ -7,6 +7,7 @@ import {
   map,
   merge,
   Observable,
+  share,
   shareReplay,
   toArray,
   zip,
@@ -88,5 +89,9 @@ export class ApiService {
 
   getUsersShareReplay() {
     return this.http.get(`http://localhost:3000/users`).pipe(shareReplay(1));
+  }
+
+  getUsersShare() {
+    return this.http.get(`http://localhost:3000/users`).pipe(share());
   }
 }

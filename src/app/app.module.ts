@@ -32,6 +32,7 @@ import { StartWithComponent } from './components/operators-join/start-with/start
 import { CombineLatestComponent } from './components/operators-join/combine-latest/combine-latest.component';
 import { WithLatestFromComponent } from './components/operators-join/with-latest-from/with-latest-from.component';
 import { ShareReplayComponent } from './components/operators-multicasting/share-replay/share-replay.component';
+import { ShareComponent } from './components/operators-multicasting/share/share.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { ShareReplayComponent } from './components/operators-multicasting/share-
     CombineLatestComponent,
     WithLatestFromComponent,
     ShareReplayComponent,
+    ShareComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
