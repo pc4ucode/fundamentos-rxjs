@@ -1,14 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {
+  catchError,
   concat,
   forkJoin,
   interval,
   map,
   merge,
   Observable,
+  of,
   share,
   shareReplay,
+  throwError,
   toArray,
   zip,
 } from 'rxjs';
@@ -91,7 +94,25 @@ export class ApiService {
     return this.http.get(`http://localhost:3000/users`).pipe(shareReplay(1));
   }
 
-  getUsersShare() {
+  getUserShare() {
     return this.http.get(`http://localhost:3000/users`).pipe(share());
+  }
+
+  getUserCatchError() {
+    return this.http.get(`http://localhost:3000/us`).pipe(
+      catchError((error) => {
+        if (error.status === 0 && error.status !== 404) {
+          return of(
+            'Ocorreu um erro na aplicação, por favor tente mais tarde!'
+          );
+        } else if (error.status === 404) {
+          console.log(error.message);
+        } else {
+          return of('Ocorreu um erro no servidor, tente mais tarde!');
+        }
+
+        return throwError(() => error);
+      })
+    );
   }
 }

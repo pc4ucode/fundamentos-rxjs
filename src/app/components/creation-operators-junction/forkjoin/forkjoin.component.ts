@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { forkJoin, of, timer } from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 import { ApiService } from '../../../services/api.service';
@@ -9,7 +9,7 @@ import { ApiService } from '../../../services/api.service';
   styleUrl: './forkjoin.component.scss',
 })
 export class ForkjoinComponent {
-  constructor(private apiService: ApiService) {}
+  apiService = inject(ApiService);
 
   ngOnInit() {
     this.operatorForkJoin();

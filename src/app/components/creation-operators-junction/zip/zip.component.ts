@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ApiService } from '../../../services/api.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { ApiService } from '../../../services/api.service';
   styleUrl: './zip.component.scss',
 })
 export class ZipComponent {
-  constructor(private apiService: ApiService) {}
+  apiService = inject(ApiService);
 
   ngOnInit() {
     this.getUsersZip();

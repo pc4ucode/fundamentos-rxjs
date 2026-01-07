@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ApiService } from '../../../services/api.service';
 import { map } from 'rxjs';
 
@@ -8,7 +8,7 @@ import { map } from 'rxjs';
   styleUrl: './share-replay.component.scss',
 })
 export class ShareReplayComponent {
-  constructor(private apiService: ApiService) {}
+  apiService = inject(ApiService);
 
   ngOnInit(): void {
     this.operatorShareReplay();

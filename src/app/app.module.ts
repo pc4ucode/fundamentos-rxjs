@@ -33,6 +33,7 @@ import { CombineLatestComponent } from './components/operators-join/combine-late
 import { WithLatestFromComponent } from './components/operators-join/with-latest-from/with-latest-from.component';
 import { ShareReplayComponent } from './components/operators-multicasting/share-replay/share-replay.component';
 import { ShareComponent } from './components/operators-multicasting/share/share.component';
+import { CatchErrorComponent } from './components/error-handling-operators/catch-error/catch-error.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { ShareComponent } from './components/operators-multicasting/share/share.
     WithLatestFromComponent,
     ShareReplayComponent,
     ShareComponent,
+    CatchErrorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

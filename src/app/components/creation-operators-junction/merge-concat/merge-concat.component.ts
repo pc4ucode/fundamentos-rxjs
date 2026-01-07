@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ApiService } from '../../../services/api.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { ApiService } from '../../../services/api.service';
   styleUrl: './merge-concat.component.scss',
 })
 export class MergeConcatComponent {
-  constructor(private apiService: ApiService) {}
+  apiService = inject(ApiService);
 
   ngOnInit() {
     // this.getUsersMerge();

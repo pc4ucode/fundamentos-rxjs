@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { from, map } from 'rxjs';
 import { ApiService } from '../../../services/api.service';
 
@@ -8,7 +8,7 @@ import { ApiService } from '../../../services/api.service';
   styleUrl: './map.component.scss',
 })
 export class MapComponent {
-  constructor(private apiService: ApiService) {}
+  apiService = inject(ApiService);
 
   ngOnInit() {
     this.operatorMap();
