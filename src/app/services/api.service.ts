@@ -9,6 +9,7 @@ import {
   merge,
   Observable,
   of,
+  retry,
   share,
   shareReplay,
   throwError,
@@ -112,7 +113,8 @@ export class ApiService {
         }
 
         return throwError(() => error);
-      })
+      }),
+      retry(10)
     );
   }
 }
