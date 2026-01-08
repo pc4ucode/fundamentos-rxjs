@@ -34,6 +34,7 @@ import { WithLatestFromComponent } from './components/operators-join/with-latest
 import { ShareReplayComponent } from './components/operators-multicasting/share-replay/share-replay.component';
 import { ShareComponent } from './components/operators-multicasting/share/share.component';
 import { CatchErrorComponent } from './components/error-handling-operators/catch-error/catch-error.component';
+import { RetryWhenComponent } from './components/error-handling-operators/retry-when/retry-when.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { CatchErrorComponent } from './components/error-handling-operators/catch
     ShareReplayComponent,
     ShareComponent,
     CatchErrorComponent,
+    RetryWhenComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
