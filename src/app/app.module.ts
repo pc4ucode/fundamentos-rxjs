@@ -41,6 +41,7 @@ import { TimeoutComponent } from './components/utility-operators/timeout/timeout
 import { EveryComponent } from './components/boolean-conditional-operators/every/every.component';
 import { FindComponent } from './components/boolean-conditional-operators/find/find.component';
 import { FindIndexComponent } from './components/boolean-conditional-operators/find-index/find-index.component';
+import { IsEmptyComponent } from './components/boolean-conditional-operators/is-empty/is-empty.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { FindIndexComponent } from './components/boolean-conditional-operators/f
     EveryComponent,
     FindComponent,
     FindIndexComponent,
+    IsEmptyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
