@@ -40,6 +40,7 @@ import { DelayComponent } from './components/utility-operators/delay/delay.compo
 import { TimeoutComponent } from './components/utility-operators/timeout/timeout.component';
 import { EveryComponent } from './components/boolean-conditional-operators/every/every.component';
 import { FindComponent } from './components/boolean-conditional-operators/find/find.component';
+import { FindIndexComponent } from './components/boolean-conditional-operators/find-index/find-index.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { FindComponent } from './components/boolean-conditional-operators/find/f
     TimeoutComponent,
     EveryComponent,
     FindComponent,
+    FindIndexComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
