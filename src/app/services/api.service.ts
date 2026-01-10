@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import {
   catchError,
   concat,
+  delay,
   forkJoin,
   interval,
   map,
@@ -116,5 +117,9 @@ export class ApiService {
       }),
       retry(10)
     );
+  }
+
+  getUserDelay() {
+    return this.http.get(`http://localhost:3000/users`).pipe(delay(5000));
   }
 }

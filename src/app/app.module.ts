@@ -36,6 +36,7 @@ import { ShareComponent } from './components/operators-multicasting/share/share.
 import { CatchErrorComponent } from './components/error-handling-operators/catch-error/catch-error.component';
 import { RetryWhenComponent } from './components/error-handling-operators/retry-when/retry-when.component';
 import { TapComponent } from './components/utility-operators/tap/tap.component';
+import { DelayComponent } from './components/utility-operators/delay/delay.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { TapComponent } from './components/utility-operators/tap/tap.component';
     CatchErrorComponent,
     RetryWhenComponent,
     TapComponent,
+    DelayComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
